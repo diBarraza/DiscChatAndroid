@@ -1,4 +1,4 @@
-package cl.ucn.disc.dsm.DaDichatdisc;
+package cl.ucn.disc.dsm.DaDichatdisc.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import cl.ucn.disc.dsm.DaDichatdisc.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), ChatActivity2.class));
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
             }
         });
     }
